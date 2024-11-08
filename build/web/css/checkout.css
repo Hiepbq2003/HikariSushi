@@ -1,0 +1,153 @@
+/* Định dạng chung */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f4f7; /* Nền nhẹ nhàng */
+}
+
+h1 {
+    text-align: center;
+    color: #343a40; /* Màu tiêu đề */
+    margin: 30px 0; /* Khoảng cách phía trên và dưới */
+}
+
+/* Định dạng form */
+form {
+    max-width: 600px;
+    margin: 20px auto; /* Căn giữa */
+    background-color: #fff; /* Nền trắng cho form */
+    padding: 30px; /* Khoảng cách bên trong form */
+    border-radius: 8px; /* Độ cong góc */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Bóng mờ */
+}
+
+/* Định dạng label */
+label {
+    font-weight: bold; /* Chữ đậm */
+    margin-bottom: 5px; /* Khoảng cách phía dưới */
+    display: block; /* Mỗi label chiếm một dòng */
+    color: #495057; /* Màu chữ cho label */
+}
+
+/* Định dạng input và textarea */
+input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+    width: 100%; /* Chiều rộng 100% */
+    padding: 12px; /* Khoảng cách bên trong */
+    margin-bottom: 15px; /* Khoảng cách phía dưới */
+    border: 1px solid #ced4da; /* Đường viền xám */
+    border-radius: 5px; /* Độ cong góc */
+    box-sizing: border-box; /* Tính toán kích thước chính xác */
+    transition: border-color 0.3s ease; /* Hiệu ứng chuyển tiếp */
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
+    border-color: #28a745; /* Đổi màu viền khi focus */
+}
+
+/* Định dạng nút submit */
+input[type="submit"] {
+    width: 100%; /* Chiều rộng 100% */
+    padding: 12px; /* Khoảng cách bên trong */
+    background-color: #28a745; /* Màu nền xanh */
+    color: white; /* Màu chữ trắng */
+    border: none; /* Không viền */
+    border-radius: 5px; /* Độ cong góc */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Đổi con trỏ thành hình bàn tay */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển tiếp */
+}
+
+input[type="submit"]:hover {
+    background-color: #218838; /* Đổi màu khi hover */
+}
+
+/* Định dạng link */
+a {
+    text-align: center; /* Căn giữa */
+    display: block; /* Hiển thị dưới dạng block */
+    margin-top: 20px; /* Khoảng cách phía trên */
+    text-decoration: none; /* Không gạch chân */
+    color: #007bff; /* Màu xanh cho link */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển tiếp */
+}
+
+a:hover {
+    color: #0056b3; /* Đổi màu khi hover */
+}
+
+/* Định dạng bảng đơn hàng */
+table {
+    width: 100%; /* Chiều rộng 100% */
+    margin-bottom: 20px; /* Khoảng cách phía dưới */
+    border-collapse: collapse; /* Gộp viền */
+}
+
+th, td {
+    padding: 12px; /* Khoảng cách bên trong ô */
+    border: 1px solid #dee2e6; /* Đường viền xám */
+    text-align: left; /* Căn trái */
+}
+
+th {
+    background-color: #343a40; /* Nền tối cho tiêu đề bảng */
+    color: white; /* Chữ trắng */
+}
+
+/* Định dạng radio button */
+input[type="radio"] {
+    margin-right: 10px; /* Khoảng cách bên phải */
+}
+
+/* Định dạng tiêu đề nhỏ */
+h2 {
+    border-bottom: 2px solid #343a40; /* Đường viền dưới */
+    padding-bottom: 10px; /* Khoảng cách dưới */
+    color: #343a40; /* Màu tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách dưới */
+}
+
+/* Định dạng placeholder cho textarea */
+textarea::placeholder {
+    color: #adb5bd; /* Màu chữ placeholder */
+}
+
+/* Định dạng cho thông tin thanh toán */
+.payment-method span {
+    display: block; /* Hiển thị dưới dạng block */
+    color: #6c757d; /* Màu xám */
+    margin-left: 20px; /* Khoảng cách bên trái */
+    font-size: 14px; /* Kích thước chữ nhỏ */
+}
+
+/* Định dạng thông tin phí vận chuyển và tổng cộng */
+p {
+    font-size: 16px; /* Kích thước chữ */
+    color: #343a40; /* Màu chữ */
+    margin: 10px 0; /* Khoảng cách trên và dưới */
+}
+
+/* Định dạng cho thông tin tổng kết */
+.summary {
+    padding: 10px;
+    background-color: #e9ecef; /* Nền xám nhạt */
+    border: 1px solid #dee2e6; /* Đường viền xám */
+    border-radius: 5px; /* Độ cong góc */
+    margin-top: 20px; /* Khoảng cách phía trên */
+}
+/* Định dạng link */
+.link-back {
+    display: inline-block; /* Hiển thị dưới dạng inline-block */
+    margin-top: 20px; /* Khoảng cách phía trên */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    text-decoration: none; /* Không gạch chân */
+    background-color: #007bff; /* Nền xanh */
+    color: white; /* Màu chữ trắng */
+    border-radius: 5px; /* Độ cong góc */
+    text-align: center; /* Căn giữa chữ */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển tiếp */
+}
+
+.link-back:hover {
+    background-color: #0056b3; /* Đổi màu nền khi hover */
+}

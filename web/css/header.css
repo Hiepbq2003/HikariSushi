@@ -1,0 +1,226 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* CSS cho phần giao hàng và thông tin người dùng */
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+.delivery-info {
+    color: black;
+    font-weight: bold; /* Đậm cho thông tin giao hàng */
+}
+
+.phone-number {
+    color: red; /* Màu đỏ cho số điện thoại */
+}
+
+.search-container {
+    flex-grow: 1; /* Chiếm không gian còn lại */
+    display: flex;
+    justify-content: center; /* Canh giữa */
+}
+
+.search-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px; /* Khoảng cách giữa ô input và nút tìm kiếm */
+}
+
+.search-container button {
+    background-color: #007bff; /* Màu nền nút */
+    color: white; /* Màu chữ nút */
+    border: none; /* Không có viền */
+    border-radius: 5px; /* Bo góc */
+    padding: 10px 15px; /* Khoảng cách bên trong nút */
+    cursor: pointer; /* Con trỏ khi hover */
+}
+
+.search-container button:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
+
+.user-container {
+    position: relative;
+    margin-left: 0px;
+    margin-right: 20px;
+    
+}
+
+.login-message, .cart-message {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    display: none; /* Ẩn thông điệp mặc định */
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+.user-container:hover .login-message,
+.cart:hover .cart-message {
+    display: block; /* Hiện thông điệp khi di chuột */
+}
+.user-container a,
+.cart {
+    font-size: 1.5rem; /* Tăng kích thước icon */
+}
+
+.cart {
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+/* Đầu trang (Top navigation) */
+.topnav {
+    display: flex; /* Sử dụng flexbox để bố trí các liên kết ngang hàng */
+    justify-content: center; /* Khoảng cách giữa các liên kết */
+    align-items: center; /* Canh giữa theo chiều dọc */
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+.topnav a {
+    color: white; /* Màu chữ của liên kết */
+    text-align: center; /* Canh giữa chữ */
+    padding: 14px 20px; /* Khoảng cách xung quanh chữ */
+    text-decoration: none; /* Bỏ gạch chân */
+    font-size: 20px; /* Kích thước chữ */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi cho nền */
+}
+
+.topnav a:hover {
+    background-color: #555; /* Màu nền khi di chuột qua liên kết */
+    border-radius: 5px; /* Bo góc cho nền */
+}
+
+.logo img {
+    width: 130px; /* Kích thước cho logo */
+    height: auto; /* Giữ tỷ lệ khung hình */
+}
+
+.logo {
+    display: flex; /* Sử dụng flexbox để bố trí các liên kết ngang hàng */
+    justify-content: center; /* Khoảng cách giữa các liên kết */
+    align-items: center; /* Canh giữa theo chiều dọc */
+    background-color: white; /* Màu nền cho navbar */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+/* Các tiêu đề */
+h1, h2, h3, h4, p {
+    margin: 10px 0; /* Khoảng cách trên và dưới cho đoạn văn */
+}
+
+h1 {
+    font-size: 2.5em; /* Kích thước chữ cho tiêu đề chính */
+    color: #2c3e50; /* Màu chữ cho tiêu đề chính */
+    text-transform: uppercase; /* Chữ hoa */
+}
+
+h2 {
+    font-size: 2em; /* Kích thước chữ cho tiêu đề phụ */
+    color: #e74c3c; /* Màu chữ cho tiêu đề phụ */
+    margin-top: 40px; /* Khoảng cách trên */
+}
+
+h3 {
+    font-size: 1.5em; /* Kích thước chữ cho tiêu đề trong phần hình ảnh */
+    color: #e74c3c;
+}
+
+h4 {
+    font-size: 1.2em; /* Kích thước chữ cho tiêu đề dịch vụ */
+    color: #3498db; /* Màu chữ cho tiêu đề dịch vụ */
+}
+
+p {
+    font-size: 1.1em; /* Kích thước chữ cho đoạn văn */
+    line-height: 1.6; /* Khoảng cách giữa các dòng */
+}
+
+.user-container a,
+.cart {
+    font-size: 1.5rem; /* Tăng kích thước icon */
+    position: relative; /* Đặt vị trí tương đối để sử dụng cho pseudo-element */
+}
+
+/* Tạo gạch chân cho icon */
+.user-container a::after,
+.cart::after {
+    content: ""; /* Tạo một nội dung rỗng */
+    display: block; /* Hiển thị dưới dạng block */
+    height: 2px; /* Chiều cao của gạch chân */
+    background-color: blue; /* Màu sắc của gạch chân */
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    bottom: -5px; /* Điều chỉnh vị trí dưới icon */
+    left: 50%; /* Canh giữa */
+    width: 100%; /* Độ rộng gạch chân bằng với icon */
+    transform: translateX(-50%); /* Di chuyển gạch chân về giữa */
+    visibility: hidden; /* Ẩn gạch chân mặc định */
+}
+
+/* Hiện gạch chân khi di chuột */
+.user-container a:hover::after,
+.cart:hover::after {
+    visibility: visible; /* Hiện gạch chân khi hover */
+}
+
+.user-container:hover .profile-menu {
+    display: block; /* Hiện menu khi hover */
+}
+
+.profile-menu {
+    display: none; /* Ẩn menu mặc định */
+    position: absolute;
+    background-color: white; /* Màu nền cho menu */
+    border: 1px solid #ccc; /* Viền cho menu */
+    z-index: 1000; /* Đặt chiều sâu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    top: 30px; /* Đặt vị trí của menu dưới biểu tượng người dùng */
+    right: 0; /* Canh phải */
+    width: 150px; /* Chiều rộng menu */
+    border-radius: 5px; /* Bo góc cho menu */
+}
+
+.profile-menu a {
+    display: block; /* Hiển thị từng mục trong menu thành một khối */
+    padding: 10px; /* Khoảng cách bên trong cho menu */
+    color: #333; /* Màu chữ */
+    text-decoration: none; /* Bỏ gạch chân */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi nền */
+    font-size: 1.2em; /* Kích thước chữ nhỏ hơn */
+    text-align: center;
+}
+
+.profile-menu a:hover {
+    background-color: #f0f0f0; /* Màu nền khi hover */
+    color: #007bff; /* Màu chữ khi hover */
+}
+
+
+

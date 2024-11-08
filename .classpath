@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="servlet/|logging/|outlook/|webapp/src/classes/|client/|webapp/src/taglib/" kind="src" path="lib/javamail-1.4.7/demo"/>
+	<classpathentry kind="src" path="lib/javamail-1.4.7/demo/client"/>
+	<classpathentry kind="src" path="lib/javamail-1.4.7/demo/logging"/>
+	<classpathentry kind="src" path="lib/javamail-1.4.7/demo/outlook"/>
+	<classpathentry kind="src" path="lib/javamail-1.4.7/demo/servlet"/>
+	<classpathentry kind="src" path="lib/javamail-1.4.7/demo/webapp/src/classes"/>
+	<classpathentry kind="src" path="lib/javamail-1.4.7/demo/webapp/src/taglib"/>
+	<classpathentry excluding="controller/Account/" kind="src" path="src/java"/>
+	<classpathentry kind="src" path="src/java/controller/Account"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/dsn.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/gimap.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/imap.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/jakarta.servlet.jsp.jstl-2.0.0.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-2.0.0.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/jaxb-api-2.1.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/mail.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/mailapi.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/pop3.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/smtp.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/sqljdbc42.jar"/>
+	<classpathentry kind="lib" path="lib/javamail-1.4.7/lib/dsn.jar"/>
+	<classpathentry kind="lib" path="lib/javamail-1.4.7/lib/gimap.jar"/>
+	<classpathentry kind="lib" path="lib/javamail-1.4.7/lib/imap.jar"/>
+	<classpathentry kind="lib" path="lib/javamail-1.4.7/lib/mailapi.jar"/>
+	<classpathentry kind="lib" path="lib/javamail-1.4.7/lib/pop3.jar"/>
+	<classpathentry kind="lib" path="lib/javamail-1.4.7/lib/smtp.jar"/>
+	<classpathentry kind="lib" path="lib/javamail-1.4.7/mail.jar"/>
+	<classpathentry kind="lib" path="lib/javax.mail-1.6.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/lib/dsn.jar"/>
+	<classpathentry kind="lib" path="lib/lib/gimap.jar"/>
+	<classpathentry kind="lib" path="lib/lib/imap.jar"/>
+	<classpathentry kind="lib" path="lib/lib/jakarta.servlet.jsp.jstl-2.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/lib/jakarta.servlet.jsp.jstl-api-2.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/lib/jaxb-api-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/lib/mail.jar"/>
+	<classpathentry kind="lib" path="lib/lib/mailapi.jar"/>
+	<classpathentry kind="lib" path="lib/lib/pop3.jar"/>
+	<classpathentry kind="lib" path="lib/lib/smtp.jar"/>
+	<classpathentry kind="lib" path="lib/lib/sqljdbc42.jar"/>
+	<classpathentry kind="output" path="build/web/WEB-INF/classes"/>
+</classpath>

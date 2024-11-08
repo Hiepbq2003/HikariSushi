@@ -1,0 +1,123 @@
+/* Thiết lập chung cho body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Màu nền sáng */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container chính */
+.container {
+    max-width: 1200px; /* Chiều rộng tối đa */
+    margin: 0 auto; /* Căn giữa */
+    padding: 20px; /* Khoảng cách bên trong */
+}
+
+/* Tiêu đề trang */
+h1 {
+    color: #333; /* Màu chữ tối */
+    font-size: 2.5rem; /* Kích thước chữ lớn */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+}
+
+/* Chi tiết sản phẩm */
+.product-detail {
+    background-color: #fff; /* Màu nền trắng */
+    padding: 30px; /* Khoảng cách bên trong */
+    border-radius: 10px; /* Bo góc */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    margin-bottom: 40px; /* Khoảng cách dưới */
+}
+
+/* Tên sản phẩm */
+.product-name {
+    font-size: 1.8rem; /* Kích thước chữ */
+    color: #007bff; /* Màu chữ chính */
+    margin: 10px 0; /* Khoảng cách trên và dưới */
+}
+
+/* Giá sản phẩm */
+.product-price {
+    font-size: 1.5rem; /* Kích thước chữ */
+    color: #28a745; /* Màu chữ xanh */
+}
+
+/* Mô tả sản phẩm */
+.product-description {
+    font-size: 1.4rem; /* Kích thước chữ */
+    color: #555; /* Màu chữ xám */
+    margin: 15px 0; /* Khoảng cách trên và dưới */
+}
+
+/* Danh mục sản phẩm */
+.product-category {
+    font-size: 1rem; /* Kích thước chữ */
+    color: #6c757d; /* Màu chữ xám nhạt */
+}
+
+/* Nút thêm vào giỏ hàng */
+.btn-primary {
+    background-color: #007bff; /* Màu nền */
+    border-color: #007bff; /* Màu viền */
+}
+
+/* Carousel cho sản phẩm cùng loại */
+.carousel-item {
+    display: flex; /* Hiển thị theo hàng */
+    justify-content: center; /* Căn giữa */
+    
+}
+
+.carousel .row {
+    margin-right: 0; /* Loại bỏ khoảng cách bên phải */
+    margin-left: 0; /* Loại bỏ khoảng cách bên trái */
+}
+
+/* Sản phẩm liên quan */
+.related-item {
+    background-color: #fdfdfd; /* Màu nền sản phẩm liên quan */
+    border: 1px solid #eaeaea; /* Viền sản phẩm liên quan */
+    border-radius: 5px; /* Bo góc */
+    padding: 20px; /* Khoảng cách bên trong */
+    text-align: center; /* Căn giữa chữ */
+    transition: box-shadow 0.3s; /* Hiệu ứng chuyển tiếp */
+    height: 400px;
+    width: 250px;
+}
+
+/* Hiệu ứng hover cho sản phẩm liên quan */
+.related-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Đổ bóng khi hover */
+}
+
+/* Hình ảnh sản phẩm liên quan */
+.related-item img {
+    max-width: 100%; /* Chiều rộng tối đa */
+    border-radius: 5px; /* Bo góc hình ảnh */
+}
+
+/* Nút "Xem chi tiết" */
+.btn-secondary {
+    background-color: #6c757d; /* Màu nền xám */
+    border-color: #6c757d; /* Màu viền */
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40; /* Màu nền tối */
+    color: #fff; /* Màu chữ trắng */
+    text-align: center; /* Căn giữa chữ */
+    padding: 20px; /* Khoảng cách bên trong */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.1); /* Màu nền đen */
+    color: white; /* Màu mũi tên trắng */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Đảo màu biểu tượng mũi tên sang trắng */
+}
+

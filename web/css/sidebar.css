@@ -1,0 +1,327 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+/* CSS cho phần giao hàng và thông tin người dùng */
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    padding: 10px 20px; /* Khoảng cách bên trong */
+}
+
+.delivery-info {
+    color: black;
+}
+
+.phone-number {
+    color: red; /* Màu đỏ cho số điện thoại */
+}
+
+.user {
+    position: relative;
+}
+
+.login-message, .cart-message {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    display: none; /* Ẩn thông điệp mặc định */
+    z-index: 10;
+}
+
+.user-container:hover .login-message,
+.cart:hover .cart-message {
+    display: block; /* Hiện thông điệp khi di chuột */
+}
+.cart {
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.login-icon {
+    position: relative;
+}
+.user-container{
+    justify-content: left;
+    margin-left:  1150px;
+}
+.user-container a,
+.cart {
+    font-size: 1.5rem; /* Tăng kích thước icon */
+}
+
+/* Đầu trang (Top navigation) */
+.topnav {
+    display: flex; /* Sử dụng flexbox để bố trí các liên kết ngang hàng */
+    justify-content:  center; /* Khoảng cách giữa các liên kết */
+    align-items: center; /* Canh giữa theo chiều dọc */
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+.topav .hikari{
+    justify-content: center;
+}
+
+
+.topnav a {
+    color: white; /* Màu chữ của liên kết */
+    text-align: center; /* Canh giữa chữ */
+    padding: 14px 20px; /* Khoảng cách xung quanh chữ */
+    text-decoration: none; /* Bỏ gạch chân */
+    font-size: 20px; /* Kích thước chữ */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi cho nền */
+}
+
+.topnav a:hover {
+    background-color: #555; /* Màu nền khi di chuột qua liên kết */
+    border-radius: 5px; /* Bo góc cho nền */
+}
+
+.logo img {
+    width: 130px; /* Kích thước cho logo */
+    height: auto; /* Giữ tỷ lệ khung hình */
+}
+.logo {
+    display: flex; /* Sử dụng flexbox để bố trí các liên kết ngang hàng */
+    justify-content: center; /* Khoảng cách giữa các liên kết */
+    align-items: center; /* Canh giữa theo chiều dọc */
+    background-color: white; /* Màu nền cho navbar */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+
+
+h1 {
+    font-size: 2.5em; /* Kích thước chữ cho tiêu đề chính */
+    color: #2c3e50; /* Màu chữ cho tiêu đề chính */
+    text-transform: uppercase; /* Chữ hoa */
+}
+
+h2 {
+    font-size: 2em; /* Kích thước chữ cho tiêu đề phụ */
+    color: #e74c3c; /* Màu chữ cho tiêu đề phụ */
+    margin-top: 40px; /* Khoảng cách trên */
+}
+
+h3 {
+    font-size: 1.5em; /* Kích thước chữ cho tiêu đề trong phần hình ảnh */
+    color: #e74c3c;
+}
+
+h4 {
+    font-size: 1.2em; /* Kích thước chữ cho tiêu đề dịch vụ */
+    color: #3498db; /* Màu chữ cho tiêu đề dịch vụ */
+}
+
+p {
+    font-size: 1.1em; /* Kích thước chữ cho đoạn văn */
+    line-height: 1.6; /* Khoảng cách giữa các dòng */
+    margin: 10px 0; /* Khoảng cách trên và dưới cho đoạn văn */
+}
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    text-align: center;
+    padding-top: 30px
+}
+.footer-col-1 p {
+    color: #8a8a8a;
+}
+
+.footer h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+}
+.footer-col-1 p{
+    color: #ace0f9;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 iframe {
+    width: 400px;
+    height: 230px;
+    margin-bottom: 2px;
+}
+
+.footer-col-4 ul {
+    list-style: none;
+
+    text-align: left;
+}
+
+.footer-col-4 ul li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: #57c6e1;
+}
+
+.footer-col-4 ul li a i {
+    font-size: 30px;
+    color: white; /* Màu logo */
+    transition: color 0.3s;
+    margin-left: 50px;
+}
+
+.footer-col-4 ul li a i:hover {
+    color: #007bff; /* Màu khi hover */
+}
+
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+
+/* About Section */
+.about-intro {
+    background-color: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-intro h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-intro p {
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Video Section */
+.video-section {
+    padding: 50px 0;
+}
+
+.video-section .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-section iframe {
+    border-radius: 10px;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 50px 0;
+    text-align: center;
+    
+}
+
+.gallery-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Tùy chỉnh carousel cho gallery */
+.carousel-item {
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-img {
+    transition: transform 0.3s ease;
+    width: 300px; /* Kích thước cố định cho ảnh */
+    height: auto; /* Giữ tỉ lệ ảnh */
+    border-radius: 5px; /* Bo góc cho ảnh */
+    margin: auto; /* Căn giữa ảnh trong cột */
+    display: block; /* Đảm bảo ảnh là một khối */
+}
+
+.gallery-img:hover {
+    transform: scale(1.1); /* Tăng kích thước khi hover */
+}
+
+.gallery-img:active {
+    transform: scale(1.2); /* Tăng kích thước khi click */
+}
+
+
+
+
+.carousel-inner .row {
+    justify-content: center;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    color: #333;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #333;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 15px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-6 {
+        width: 50%;
+        padding: 15px;
+    }
+
+    .col-4 {
+        width: 33.33%;
+        padding: 15px;
+    }
+
+    iframe {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
